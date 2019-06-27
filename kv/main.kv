@@ -1,0 +1,56 @@
+<MainContainer>:
+    rows: 1
+    id: vboxmain
+    orientation: "vertical"
+    canvas.before:
+        Color:
+            rgb: (0.8, 0.8, 0.8)
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'images/fondos/worship.jpg'
+    ScreenDisplay:
+        name: 'screen'
+        id: screen
+
+
+<ScreenDisplay>
+    GridLayout:
+        rows: 3
+        orientation: "vertical"
+        Label:
+            id: header
+            outline_color: (0, 0, 0)
+            disabled_outline_color: (0, 0, 0)
+            outline_width: 5
+            font_size: '40dp'
+            size_hint: 1, 0.1
+            text_size: 800, None
+            halign: 'center'
+            valign: 'center'
+            markup: True
+        ScrollView:
+            id: scroll
+            size_hint: 1, 0.8
+            do_scroll_x: False
+            do_scroll_y: True
+            Label:
+                id: body
+                size_hint: None, None
+                size: self.texture_size
+                font_size: '54dp'
+                text_size: 800, None
+                halign: 'center'
+                valign: 'center'
+                markup: True
+        Label:
+            id: footer
+            outline_color: (0, 0, 0)
+            disabled_outline_color: (0, 0, 0)
+            outline_width: 5
+            font_size: '20dp'
+            size_hint: 1, 0.1
+            text_size: 800, None
+            halign: 'center'
+            valign: 'center'
+            markup: True
