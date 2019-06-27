@@ -1,0 +1,4 @@
+V1.0-beta
+ - Probado en Ubuntu con Kivy 1.11
+ - Python 2.7
+ - Biblia RVR60
