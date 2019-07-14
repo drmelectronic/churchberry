@@ -77,6 +77,7 @@ class Biblia:
         except:
             print('No se encontro el versiculo')
             return {'h': libro['nombre'], 'b': '-', 'f': self.version_nombre}
+
         return {'h': libro['nombre'], 'b': '%s:%s %s' % (data['c'] + 1, data['v'] + 1, texto), 'f': self.version_nombre}
 
 
