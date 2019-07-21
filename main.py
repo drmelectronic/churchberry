@@ -33,7 +33,7 @@ Config.set('graphics', 'allow_screensaver', False)
 from kivy.config import Config
 Config.set('graphics', 'resizable', 0)
 from kivy.core.window import Window
-Window.size = (800, 480)
+Window.size = (1280, 720)
 from fonts.iconfonts import register, icon
 register('fontawesome', 'fonts/fa-solid-900.ttf', 'fonts/fontawesome.fontd')
 
